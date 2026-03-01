@@ -31,7 +31,7 @@ class SoftballPitchingAnalyzer:
         self.pose = self.mp_pose.Pose(
             min_detection_confidence=0.5,
             min_tracking_confidence=0.5,
-            model_complexity=2  # 0=lite, 1=full, 2=heavy (most accurate)
+            model_complexity=1  # 0=lite, 1=full (locally available), 2=heavy
         )
         
         # Storage for analysis data
